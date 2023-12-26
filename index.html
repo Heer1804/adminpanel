@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Velzon - Admin & Dashboard Template</title>
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/logo-sm.png">
+
+    <!-- remix icons -->
+    <link rel="stylesheet" href="assets/fonts/remixicon.css">
+
+    <!-- chart js -->
+    <link rel="stylesheet" href="assets/js/chart.js">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header start's -->
+
+    <header class=" top ali-center d-flex f-wrap j-bet">
+        <div class="search  d-flex f-wrap ali-center">
+            <i class="ri-bar-chart-horizontal-line"></i>
+            <i class="ri-search-line"></i>
+            <input type="search" placeholder="  Search...." class="input">
+
+        </div>
+        <ul class="icons d-flex f-wrap ali-center">
+
+            <li class="lang"><a><img src="assets/images/us.svg" alt="us" class="us"></a></li>
+
+            <div class="us_drop">
+                <div class="us_dropdown d-flex">
+                    <img src="assets/images/us.svg" alt="">
+                    <span class="con">English</span>
+                </div>
+                <div class="us_dropdown d-flex">
+                    <img src="assets/images/2.svg" alt="">
+                    <span class="con">Española</span>
+                </div>
+                <div class="us_dropdown d-flex">
+                    <img src="assets/images/3.svg" alt="">
+                    <span class="con">Italiana</span>
+                </div>
+                <div class="us_dropdown d-flex">
+                    <img src="assets/images/4.svg" alt="">
+                    <span class="con">Pусский</span>
+                </div>
+                <div class="us_dropdown d-flex">
+                    <img src="assets/images/5.svg" alt="">
+                    <span class="con">Deutsche</span>
+                </div>
+            </div>
+
+            <li class="app"><a href="javascript:void(0);"><i class="ri-grid-fill"></i></a></li>
+            <div class="bar_dropdown">
+                <div class="bar_drop d-flex j-bet">
+                    <h4>Web Apps</h4>
+                    <span><button>View All Apps</button></span>
+                </div>
+                <div class="bar_body d-flex j-bet">
+                    <div class="bar_row">
+                        <img src="assets/images/1-1.png" alt="">
+                        <h4>GitHub</h4>
+                    </div>
+                    <div class="bar_row j-bet">
+                        <img src="assets/images/1-2.png" alt="">
+                        <h4>Bitbucket</h4>
+                    </div>
+                    <div class="bar_row j-bet">
+                        <img src="assets/images/1-3.png" alt="">
+                        <h4>Dropbox</h4>
+                    </div>
+                </div>
+            </div>
+
+            <li><a href="javascript:void(0);"><i class="ri-shopping-bag-line"></i></a></li>
+            <li id="full"><a href="javascript:void(0);"><i class="ri-fullscreen-fill"></i></a></li>
+            <li id="moon"><a href="javascript:void(0);"><i class="ri-moon-line"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="ri-notification-2-line"></i></a></li>
+            <div class="founder d-flex ali-center">
+                <div class="info">
+                    <span class="d-flex ali-center">
+                        <img src="assets/images/avatar-1.jpg" alt="avatar">
+                        <span class="text">
+                            <span class="name">Anna Adame</span>
+                            <span class="sub_name">Founder</span>
+                        </span>
+                    </span>
+                </div>
+                <div class="dropdown">
+                    <h6 class="d_heading">Welcome Anna!</h6>
+                    <a href="javascript:void(0);" class="d_items">
+                        <i class="ri-account-circle-fill"></i>
+                        <span class="d_name">Profile</span>
+                    </a>
+                    <a href="javascript:void(0);" class="d_items">
+                        <i class="ri-message-2-line"></i>
+                        <span class="d_name">Messages</span>
+                    </a>
+                    <a href="javascript:void(0);" class="d_items">
+                        <i class="ri-calendar-check-line"></i>
+                        <span class="d_name">Taskboard</span>
+                    </a>
+                    <a href="javascript:void(0);" class="d_items">
+                        <i class="ri-lifebuoy-line"></i>
+                        <span class="d_name">Help</span>
+                    </a>
+                    <div class="line"></div>
+                    <a href="javascript:void(0);" class="d_items">
+                        <i class="ri-wallet-3-fill"></i>
+                        <span class="d_name">Balance : <b>$5971.67</b></span>
+                    </a>
+                    <a href="javascript:void(0);" class="d_items">
+                        <i class="ri-settings-4-line"></i>
+                        <span class="d_name">Settings</span>
+                        <button class="new">NEW</button>
+                    </a>
+                    <a href="javascript:void(0);" class="d_items">
+                        <i class="ri-lock-2-line"></i>
+                        <span class="d_name">Lock Screen</span>
+                    </a>
+                    <a href="javascript:void(0);" class="d_items">
+                        <i class="ri-logout-box-r-line"></i>
+                        <span class="d_name">Logout</span>
+                    </a>
+                </div>
+            </div>
+        </ul>
+
+    </header>
+
+    <!-- aside starts -->
+    <aside>
+        <div class="navbar-box text-center">
+            <a href="index.html" class="logo"><img src="assets/images/logo-light.png" alt="" id="home-btn"></a>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li class="menu_title">
+                    <span class="t_menu d-inline-block">Menu</span>
+                </li>
+                <li class="nav_item active">
+                    <a href="#" class="nav-link d-flex ali-center">
+                        <i class="ri-dashboard-2-line"></i>
+                        <span class="f-grow-1">Dashboard</span>
+                        <i class="ri-arrow-right-s-line a text-right d-inline-block"></i>
+                    </a>
+                    <div class="menu_dropdown">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Analytics</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">CRM</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Ecommerce</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Crypto</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Projects</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">NET</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Job</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex align-center">
+                        <i class="ri-apps-2-line"></i>
+                        <span class="f-grow-1">Apps</span>
+                        <i class="ri-arrow-right-s-line a text-right d-inline-block"></i>
+                    </a>
+                    <div class="menu_dropdown">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Calender</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Chart</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Email</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Ecommerce</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Projects</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Tasks</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">CRM</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Crypto</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Invoice</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Support Tickets</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">NFT Marketplace</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">To Do</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Job</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Jobs</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">API Key</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex align-center">
+                        <i class="ri-layout-3-line"></i>
+                        <span class="f-grow-1">Layouts</span>
+                        <span class="hot">
+                            <button>HOT</button>
+                        </span>
+                    </a>
+                    <div class="menu_dropdown">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Horizontal</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Detached</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Two Column</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Hovered</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu_title">
+                    <span class="t_menu d-inline-block">Pages</span>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex align-center">
+                        <i class="ri-account-circle-line"></i>
+                        <span class="f-grow-1">Authentication</span>
+                        <i class="ri-arrow-right-s-line a text-right d-inline-block"></i>
+                    </a>
+                    <div class="menu_dropdown">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Sign In</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Sign Up</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Password Reset</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Password Create</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Lock Screen</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Logout</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Two Step Verification</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex align-center">
+                        <i class="ri-pages-line"></i>
+                        <span class="f-grow-1">Pages</span>
+                        <i class="ri-arrow-right-s-line a text-right d-inline-block"></i>
+                    </a>
+                    <div class="menu_dropdown">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Starter</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Profile</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Team</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Timeline</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">FAQs</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Pricing</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Gallery</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Maintenance</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Coming Soon</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Sitemap</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Search Results</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Privacy Policy</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Term & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex align-center">
+                        <i class="ri-rocket-line"></i>
+                        <span class="f-grow-1">Landing</span>
+                        <i class="ri-arrow-right-s-line a text-right d-inline-block"></i>
+                    </a>
+                    <div class="menu_dropdown">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">One Page</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">NFT Landing</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Job</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu_title">
+                    <span class="t_menu d-inline-block">Components</span>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex align-center">
+                        <i class="ri-pencil-ruler-2-line"></i>
+                        <span class="f-grow-1">Base UI</span>
+                        <i class="ri-arrow-right-s-line a text-right d-inline-block"></i>
+                    </a>
+                    <div class="menu_dropdown">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Alerts</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Badges</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Buttons</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Colors</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Cards</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Carousel</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Dropdowns</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Grid</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Images</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Tabs</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Accordion & Collapse</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Modals</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Offcanvas</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Placeholders</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Progress</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Notifications</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Media object</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Embed Video</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Typography</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Lists</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Links</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">General</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Ribbons</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Utilities</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex align-center">
+                        <i class="ri-stack-line"></i>
+                        <span class="f-grow-1">Advance UI</span>
+                        <i class="ri-arrow-right-s-line a text-right d-inline-block"></i>
+                    </a>
+                    <div class="menu_dropdown">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Sweet Alerts</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Nestable List</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Scrollbar</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Animation</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Tour</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Swiper Slider</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Ratings</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Highlight</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">ScrollSpy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex align-center">
+                        <i class="ri-honour-line"></i>
+                        <span class="f-grow-1">Widgets</span>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex align-center">
+                        <i class="ri-file-list-3-line"></i>
+                        <span class="f-grow-1">Forms</span>
+                        <i class="ri-arrow-right-s-line a text-right d-inline-block"></i>
+                    </a>
+                    <div class="menu_dropdown">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Basic Elements</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Form Select</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Checkboxs & Radios</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Pickers</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Input Marks</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Advanced</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Range Slider</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Validation</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Wizard</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Editors</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">File Uploads</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Form Layouts</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Select2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex align-center">
+                        <i class="ri-layout-grid-line"></i>
+                        <span class="f-grow-1">Tables</span>
+                        <i class="ri-arrow-right-s-line a text-right d-inline-block"></i>
+                    </a>
+                    <div class="menu_dropdown">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Basic Tables</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Grid Js</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">List Js</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Datatables</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex align-center">
+                        <i class="ri-pie-chart-line"></i>
+                        <span class="f-grow-1">Charts</span>
+                        <i class="ri-arrow-right-s-line a text-right d-inline-block"></i>
+                    </a>
+                    <div class="menu_dropdown">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Apexcharts</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Chartjs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex align-center">
+                        <i class="ri-share-line"></i>
+                        <span class="f-grow-1">Multi Level</span>
+                        <i class="ri-arrow-right-s-line a text-right d-inline-block"></i>
+                    </a>
+                    <div class="menu_dropdown">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Level L1</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Level L2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex align-center">
+                        <i class="ri-compasses-2-line"></i>
+                        <span class="f-grow-1">Icon</span>
+                        <i class="ri-arrow-right-s-line a text-right d-inline-block"></i>
+                    </a>
+                    <div class="menu_dropdown">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Remix</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Font Awesome</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex align-center">
+                        <i class="ri-map-pin-line"></i>
+                        <span class="f-grow-1">Maps</span>
+                        <i class="ri-arrow-right-s-line a text-right d-inline-block"></i>
+                    </a>
+                    <div class="menu_dropdown">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Google</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Vector</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Leaflet</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-1 d-none">
+            <ul>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex justify-center align-center">
+                        <i class="ri-dashboard-2-line"></i>
+                    </a>
+                    <div class="menu_dropdown-1">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Analytics</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">CRM</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Ecommerce</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Crypto</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Projects</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">NET</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Job</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex justify-center align-center">
+                        <i class="ri-apps-2-line"></i>
+                    </a>
+                    <div class="menu_dropdown-1 d-none">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Calender</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Chart</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Email</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Ecommerce</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Projects</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Tasks</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">CRM</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Crypto</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Invoice</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Support Tickets</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">NFT Marketplace</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">To Do</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Job</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Jobs</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">API Key</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex justify-center align-center">
+                        <i class="ri-layout-3-line"></i>
+                    </a>
+                    <div class="menu_dropdown-1 d-none">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Horizontal</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Detached</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Two Column</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Hovered</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu_title text-center">
+                    <span class="t_menu d-inline-block">...</span>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex justify-center align-center">
+                        <i class="ri-account-circle-line"></i>
+                    </a>
+                    <div class="menu_dropdown-1 d-none">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Sign In</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Sign Up</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Password Reset</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Password Create</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Lock Screen</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Logout</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Two Step Verification</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex justify-center align-center">
+                        <i class="ri-pages-line"></i>
+                    </a>
+                    <div class="menu_dropdown-1 d-none">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Starter</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Profile</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Team</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Timeline</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">FAQs</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Pricing</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Gallery</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Maintenance</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Coming Soon</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Sitemap</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Search Results</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Privacy Policy</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Term & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex justify-center align-center">
+                        <i class="ri-rocket-line"></i>
+                    </a>
+                    <div class="menu_dropdown-1 d-none">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">One Page</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">NFT Landing</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Job</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="menu_title text-center">
+                    <span class="t_menu d-inline-block">...</span>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex justify-center align-center">
+                        <i class="ri-pencil-ruler-2-line"></i>
+                    </a>
+                    <div class="menu_dropdown-1 d-none">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Alerts</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Badges</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Buttons</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Colors</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Cards</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Carousel</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Dropdowns</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Grid</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Images</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Tabs</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Accordion & Collapse</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Modals</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Offcanvas</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Placeholders</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Progress</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Notifications</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Media object</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Embed Video</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Typography</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Lists</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Links</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">General</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Ribbons</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Utilities</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex justify-center align-center">
+                        <i class="ri-stack-line"></i>
+                    </a>
+                    <div class="menu_dropdown-1 d-none">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Sweet Alerts</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Nestable List</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Scrollbar</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Animation</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Tour</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Swiper Slider</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Ratings</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Highlight</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">ScrollSpy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex justify-center align-center">
+                        <i class="ri-honour-line"></i>
+                    </a>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex justify-center align-center">
+                        <i class="ri-file-list-3-line"></i>
+                    </a>
+                    <div class="menu_dropdown-1 d-none">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Basic Elements</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Form Select</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Checkboxs & Radios</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Pickers</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Input Marks</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Advanced</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Range Slider</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Validation</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Wizard</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Editors</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">File Uploads</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Form Layouts</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Select2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex justify-center align-center">
+                        <i class="ri-layout-grid-line"></i>
+                    </a>
+                    <div class="menu_dropdown-1 d-none">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Basic Tables</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Grid Js</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">List Js</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Datatables</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex justify-center align-center">
+                        <i class="ri-pie-chart-line"></i>
+                    </a>
+                    <div class="menu_dropdown-1 d-none">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Apexcharts</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Chartjs</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">EChart</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex justify-center align-center">
+                        <i class="ri-compasses-2-line"></i>
+                    </a>
+                    <div class="menu_dropdown-1 d-none">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Remix</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Font Awesome</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex justify-center align-center">
+                        <i class="ri-map-pin-line"></i>
+                    </a>
+                    <div class="menu_dropdown-1 d-none">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Google</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Vector</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Leaflet</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav-link d-flex justify-center align-center">
+                        <i class="ri-share-line"></i>
+                    </a>
+                    <div class="menu_dropdown-1 d-none">
+                        <ul class="nav d-flex f-wrap f-col">
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Level L1</a>
+                            </li>
+                            <li class="nav_item">
+                                <a href="#" class="nav_link d-flex align-center">Level L2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+
+    <!-- main body starts -->
+
+    <section class="main">
+        <div class="mar d-flex f-wrap ali-center j-bet">
+            <div class="intro ">
+                <h4 class="gm">Good Morning, Anna!</h4>
+                <p class="sub">Here's what's happening with your store today.</p>
+            </div>
+
+            <div class="d-flex">
+                <div class="mr-10 date">
+                    <input placeholder="Select your date" type="text" name="checkIn" id="datepicker" value=""
+                        class="calendar mr-10">
+                    <div class="cal_icon d-flex align-center">
+                        <i class="ri-calendar-2-line"></i>
+                    </div>
+                </div>
+
+                <div class="product mr-10">
+                    <button class="btn">
+                        <i class="ri-add-circle-line"></i>
+                        Add Product
+                    </button>
+                </div>
+
+                <div class="show">
+                    <button class="s_btn">
+                        <i class="ri-pulse-fill"></i>
+                    </button>
+                    </di v>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="grid">
+
+            <div class="earning">
+                <div class="total d-flex f-wrap j-bet">
+                    <p>TOTAL EARNINGS</p>
+                    <span class="price"><i class="ri-arrow-right-up-line"></i>+16.24 %</span>
+                </div>
+                <div class="num">
+                    <h4 class="mb-4">
+                        $<span class="counter-value" data-count="559.25">0</span>k
+                    </h4>
+                </div>
+                <div class="net d-flex f-wrap j-bet">
+                    <span class="view">
+                        <p>View Net Earning</p>
+                    </span>
+                    <div class="dollar">
+                        <i class="ri-money-dollar-circle-line"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="orders">
+                <div class="total d-flex f-wrap j-bet">
+                    <p>ORDERS</p>
+                    <span class="ord"><i class="ri-arrow-right-down-line"></i></i>-3.57%</span>
+                </div>
+                <div class="num">
+                    <h4 class="mb-4">
+                        <span class="counter-value" data-count="36894">0</span>
+                    </h4>
+                </div>
+                <div class="net d-flex f-wrap j-bet">
+                    <span class="view">
+                        <p>View all orders</p>
+                    </span>
+                    <div class="shop">
+                        <i class="ri-shopping-bag-line"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="customers">
+                <div class="total d-flex f-wrap j-bet">
+                    <p>CUSTOMERS</p>
+                    <span class="cus"><i class="ri-arrow-right-up-line"></i> +29.08 %</span>
+                </div>
+                <div class="num">
+                    <h4 class="mb-4">
+                        <span class="counter-value" data-count="183.35">0</span>M
+                    </h4>
+                </div>
+                <div class="net d-flex f-wrap j-bet">
+                    <span class="view">
+                        <p>See details</p>
+                    </span>
+                    <div class="pro">
+                        <i class="ri-account-circle-line"></i></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="balance">
+                <div class="total d-flex f-wrap j-bet">
+                    <p>MY BALANCE</p>
+                    <span class="price">+00.00 %</span>
+                </div>
+                <div class="num">
+                    <h4 class="mb-4">
+                        $ <span class="counter-value" data-count="165.89">0</span>k
+                    </h4>
+                </div>
+                <div class="net d-flex f-wrap j-bet">
+                    <span class="view">
+                        <p>Withdraw money</p>
+                    </span>
+                    <div class="wallet">
+                        <i class="ri-wallet-line"></i></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="revenue ">
+                <div class="r_head d-flex f-wrap ali-center j-bet">
+                    <div class="r_title">
+                        <h3>
+                            Revenue
+                        </h3>
+                    </div>
+                    <div class="r_card">
+                        <button class="all">
+                            ALL
+                        </button>
+                        <button class="om">
+                            <span>1M</span>
+                        </button>
+                        <button class="sm">
+                            <span>6M</span>
+                        </button>
+                        <button class="oy">
+                            <span>1Y</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="r_mid d-flex f-wrap">
+
+                    <div class="w-3">
+                        <div class="r_no d-flex f-wrap">
+                            7,585
+                        </div>
+                        <div class="r_des d-flex f-wrap">
+                            Orders
+                        </div>
+                    </div>
+
+                    <div class="w-3">
+                        <div class="r_no">
+                            $22.89k
+                        </div>
+                        <div class="r_des">
+                            Earnings
+                        </div>
+                    </div>
+
+                    <div class="w-3">
+                        <div class="r_no">
+                            367
+                        </div>
+                        <div class="r_des">
+                            Refunds
+                        </div>
+                    </div>
+
+                    <div class="w-3">
+                        <div class="r_no1">
+                            18.92%
+                        </div>
+                        <div class="r_des">
+                            Conversation Ratio
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="chart"></div>
+                
+            </div>
+
+
+            <div class="m_head d-flex f-wrap ali-center j-bet">
+                <div class="m_title">
+                    Sales By Location
+                </div>
+                <div class="m_btn">
+                    <button>EXPORT REPORT</button>
+                </div>
+                <div id="chartdiv"></div>
+                <div class="m_body">
+                    <div class="px-2 py-2 mt-1">
+                        <p class="mb-1">
+                            Canada
+                            <span class="float-end">75%</span>
+                        <div class="progress mt-2">
+                            <div class="progress-done" data-done="75"></div>
+                        </div>
+                        </p>
+
+                        <p class="mt-3 mb-1">
+                            Greenland
+                            <span class="float-end">47%</span>
+                        <div class="progress1 mt-2">
+                            <div class="progress-done1" data-done="47"></div>
+                        </div>
+                        </p>
+
+                        <p class="mt-3 mb-1">
+                            Russia
+                            <span class="float-end">82%</span>
+                        <div class="progress2 mt-2">
+                            <div class="progress-done2" data-done="82"></div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="best">
+                <div class="b_head">
+                    <div class="d-flex j-bet">
+                        <p class="t-h-dsc">
+                            Best Selling Products
+                        </p>
+                        <a href="javascript:void(0);" class="b_title">
+                            <span class="b_header">
+                                SORT BY:
+                                <span class="b_subhead">
+                                    Today
+                                </span>
+                                <i class="ri-arrow-down-line"></i>
+                            </span>
+                        </a>
+                        <div class="b_drop">
+                            <a href="javascript:void(0);" class="bt_head">Today</a>
+                            <a href="javascript:void(0);" class="bt_head">Yesterday</a>
+                            <a href="javascript:void(0);" class="bt_head">Last 7 Days</a>
+                            <a href="javascript:void(0);" class="bt_head">Last 30 Days</a>
+                            <a href="javascript:void(0);" class="bt_head">This Month</a>
+                            <a href="javascript:void(0);" class="bt_head">Last Month</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="b_line"></div>
+                <div class="b_body">
+                    <div class="t_body 
+                    .">
+                        <table>
+
+                            <tr class="bsp ">
+                                <td>
+                                    <div class="b_name d-flex f-wrap text-center">
+                                        <div class="b_img">
+                                            <img src="assets/images/img-1.png" alt="1 img">
+                                        </div>
+                                        <div class="bt_dsc">
+                                            <p class="b_pro">
+                                                Branded T-Shirt
+                                            </p>
+                                            <span class="b_date">
+                                                24-Arp-2021
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$29.00</h5>
+                                    <span>Price</span>
+                                </td>
+                                <td>
+                                    <h5>62</h5>
+                                    <span>Orders</span>
+                                </td>
+                                <td>
+                                    <h5>510</h5>
+                                    <span>Stock</span>
+                                </td>
+                                <td>
+                                    <h5>$1,789</h5>
+                                    <span>Amount</span>
+                                </td>
+                            </tr>
+
+
+                            <tr class="bsp ">
+                                <td>
+                                    <div class="b_name d-flex f-wrap text-center">
+                                        <div class="b_img">
+                                            <img src="assets/images/img-2.png" alt="1 img">
+                                        </div>
+                                        <div class="bt_dsc">
+                                            <p class="b_pro">
+                                                Bentwood Chair
+                                            </p>
+                                            <span class="b_date">
+                                                19 Mar 2021
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$85.20</h5>
+                                    <span>Price</span>
+                                </td>
+                                <td>
+                                    <h5>35</h5>
+                                    <span>Orders</span>
+                                </td>
+                                <td>
+                                    <button class="oos">Out Of Stock</button>
+                                    <span>Stock</span>
+                                </td>
+                                <td>
+                                    <h5>$2982</h5>
+                                    <span>Amount</span>
+                                </td>
+                            </tr>
+
+                            <tr class="bsp ">
+                                <td>
+                                    <div class="b_name d-flex f-wrap text-center">
+                                        <div class="b_img">
+                                            <img src="assets/images/img-3.png" alt="1 img">
+                                        </div>
+                                        <div class="bt_dsc">
+                                            <p class="b_pro">
+                                                Borosil Paper Cup
+                                            </p>
+                                            <span class="b_date">
+                                                01 Mar 2021
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$14.00</h5>
+                                    <span>Price</span>
+                                </td>
+                                <td>
+                                    <h5>680</h5>
+                                    <span>Orders</span>
+                                </td>
+                                <td>
+                                    <h5>730</h5>
+                                    <span>Stock</span>
+                                </td>
+                                <td>
+                                    <h5>$1,120</h5>
+                                    <span>Amount</span>
+                                </td>
+                            </tr>
+
+                            <tr class="bsp ">
+                                <td>
+                                    <div class="b_name d-flex f-wrap text-center">
+                                        <div class="b_img">
+                                            <img src="assets/images/img-4.png" alt="1 img">
+                                        </div>
+                                        <div class="bt_dsc">
+                                            <p class="b_pro">
+                                                One Seater Sofa
+                                            </p>
+                                            <span class="b_date">
+                                                11 Feb 2021
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$127.50</h5>
+                                    <span>Price</span>
+                                </td>
+                                <td>
+                                    <h5>56</h5>
+                                    <span>Orders</span>
+                                </td>
+                                <td>
+                                    <button class="oos">Out Of Stock</button>
+                                    <span>Stock</span>
+                                </td>
+                                <td>
+                                    <h5>$1752</h5>
+                                    <span>Amount</span>
+                                </td>
+                            </tr>
+
+                            <tr class="bsp ">
+                                <td>
+                                    <div class="b_name d-flex f-wrap text-center">
+                                        <div class="b_img">
+                                            <img src="assets/images/img-5.png" alt="1 img">
+                                        </div>
+                                        <div class="bt_dsc">
+                                            <p class="b_pro">
+                                                Stillbird Helmet
+                                            </p>
+                                            <span class="b_date">
+                                                17 Jan 2021
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$54.00</h5>
+                                    <span>Price</span>
+                                </td>
+                                <td>
+                                    <h5>74</h5>
+                                    <span>Orders</span>
+                                </td>
+                                <td>
+                                    <h5>805</h5>
+                                    <span>Stock</span>
+                                </td>
+                                <td>
+                                    <h5>$3,810</h5>
+                                    <span>Amount</span>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="company">
+                <div class="r_head ">
+                    <div class="r_title">
+                        <h3>
+                            Top Sellers
+                        </h3>
+                    </div>
+                    <div class="b_line"></div>
+                    <div id="column"></div>
+                </div>
+
+
+            </div>
+
+            <div class="source ">
+                <div class="s_head d-flex f-wrap ali-center j-bet">
+                    <div class="s_title">
+                        Store Visits by Source
+                    </div>
+                    <div class="so_btn">
+                        <span>REPORT</span>
+                        <i class="ri-arrow-down-line"></i>
+                        <div class="s_drop">
+                            <a href="javascript:void(0);" class="bt_head">Download Report</a>
+                            <a href="javascript:void(0);" class="bt_head">Export</a>
+                            <a href="javascript:void(0);" class="bt_head">Import</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="b_line"></div>
+                <div class="piechart d-flex justify-center">
+                    <div id="pie"></div>
+                </div>
+            </div>
+
+            <div class="recent">
+
+                <div class="r_head d-flex f-wrap j-bet">
+                    <div class="r_title">
+                        Recent Orders
+                    </div>
+                    <div>
+                        <button class="r_btn">
+                            <i class="ri-file-list-3-line align-middle"></i>
+                            Generate Report
+                        </button>
+                    </div>
+                </div>
+                <div class="b_line"></div>
+
+                <div class="r_table">
+                    <table>
+
+                        <tr class="r_title">
+                            <td>Order ID</td>
+                            <td>Customer</td>
+                            <td>Products</td>
+                            <td>Amount</td>
+                            <td>Vendor</td>
+                            <td>Status</td>
+                            <td>Rating</td>
+                        </tr>
+
+                        <tr class="info">
+                            <td>#VZ2112</td>
+                            <td class="r_img">
+                                <div class="ri_name d-flex ali-center">
+                                    <div class="ri_img">
+                                        <img src="assets/images/avatar-1.jpg" alt="">
+                                    </div>
+                                    <span>Alex Smith</span>
+                                </div>
+                            </td>
+                            <td>Clothes</td>
+                            <td class="r_amt">$109.20</td>
+                            <td>Zoetic Fashion</td>
+                            <td><span class="r_paid">Paid</span></td>
+                            <td><span class="rate d-flex ali-center">
+                                    <h5>5.0</h5>
+                                    <h6>(61 votes)</h6>
+                                </span></td>
+                        </tr>
+
+                        <tr class="info">
+                            <td>#VZ2112</td>
+                            <td class="r_img">
+                                <div class="ri_name d-flex ali-center">
+                                    <div class="ri_img">
+                                        <img src="assets/images/avatar-2.jpg" alt="">
+                                    </div>
+                                    <span>Jansh Brown</span>
+                                </div>
+                            </td>
+                            <td>Kitchen Storage</td>
+                            <td class="r_amt">$149.0</td>
+                            <td>Micro Design</td>
+                            <td><span class="r_pen">Pending</span></td>
+                            <td><span class="rate d-flex ali-center">
+                                    <h5>4.5</h5>
+                                    <h6>(26 votes)</h6>
+                                </span></td>
+                        </tr>
+
+                        <tr class="info">
+                            <td>#VZ2112</td>
+                            <td class="r_img">
+                                <div class="ri_name d-flex ali-center">
+                                    <div class="ri_img">
+                                        <img src="assets/images/avatar-3.jpg" alt="">
+                                    </div>
+                                    <span>Ayaan Bowen</span>
+                                </div>
+                            </td>
+                            <td>Bike Accessories</td>
+                            <td class="r_amt">$210.00</td>
+                            <td>Nesta Technologies</td>
+                            <td><span class="r_paid">Paid</span></td>
+                            <td><span class="rate d-flex ali-center">
+                                    <h5>4.9</h5>
+                                    <h6>(86 votes)</h6>
+                                </span></td>
+                        </tr>
+
+                        <tr class="info">
+                            <td>#VZ2112</td>
+                            <td class="r_img">
+                                <div class="ri_name d-flex ali-center">
+                                    <div class="ri_img">
+                                        <img src="assets/images/avatar-4.jpg" alt="">
+                                    </div>
+                                    <span>Prezy Mark</span>
+                                </div>
+                            </td>
+                            <td>KFurniture</td>
+                            <td class="r_amt">$149.0</td>
+                            <td>Syntyce Solutions</td>
+                            <td><span class="r_pen">Pending</span></td>
+                            <td><span class="rate d-flex ali-center">
+                                    <h5>4.8</h5>
+                                    <h6>(216 votes)</h6>
+                                </span></td>
+                        </tr>
+
+                        <tr class="info">
+                            <td>#VZ2112</td>
+                            <td class="r_img">
+                                <div class="ri_name d-flex ali-center">
+                                    <div class="ri_img">
+                                        <img src="assets/images/avatar-6.jpg" alt="">
+                                    </div>
+                                    <span>Vihan Hudda</span>
+                                </div>
+                            </td>
+                            <td>Bags and Wallets</td>
+                            <td class="r_amt">$210.00</td>
+                            <td>iTest Factory</td>
+                            <td><span class="r_paid">Paid</span></td>
+                            <td><span class="rate d-flex ali-center">
+                                    <h5>3.2</h5>
+                                    <h6>(116 votes)</h6>
+                                </span></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+
+    </section>
+
+
+    <!-- footer starts -->
+
+    <footer class=" foot d-flex j-bet">
+        <div class="f_first">
+            2023 © Velzon.
+        </div>
+        <div class="f_sec">
+            Design & Develop by Themesbrand
+        </div>
+    </footer>
+
+    <!-- Top & Setting btn Start -->
+    <!-- <div class="set_btn">
+        <a href="#"><i class="ri-settings-3-line"></i></a>
+    </div> -->
+
+
+
+
+    <!-- Jquery -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- map -->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/india2019High.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="assets/js/map.js"></script>
+    <!-- date picker -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <!-- apex chart -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- aside js -->
+    <script src="assets/js/aside.js"></script>
+    <!-- fullscreen js -->
+    <script src="assets/js/fullscreen.js"></script>
+    <!-- chart js -->
+    <script src="assets/js/chart.js"></script>
+    <!-- counter js -->
+    <script src="assets/js/counter.js"></script>
+    <!-- progress js -->
+    <script src="assets/js/progress.js"></script>
+
+</body>
+
+</html>
